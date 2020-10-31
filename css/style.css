@@ -1,0 +1,39 @@
+body {
+	background: grey;
+}
+
+.window {
+	width: 1400px;
+	height: 800px;
+	background: url(../image/parker-amstutz-691364-unsplash.png);
+	background-size: 1400px;
+}
+
+.window div {
+	display: inline-block;
+	height: 100%;
+	margin-right: -3.5px;
+}
+
+.navigation-1 {
+	width: 70px;
+	background: #000000;
+	opacity: 70%;
+}
+
+.navigation-2 {
+	width: 260px;
+	background: #25272A;
+	opacity: 75%;
+}
+
+.center {
+	width: 870px;
+	background: #FFFFFF;
+}
+
+.profile {
+	width: 200px;
+	background: #FFFFFF;
+	opacity: 80%;
+}
