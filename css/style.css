@@ -7,32 +7,81 @@ body {
 	height: 800px;
 	background: url(../image/parker-amstutz-691364-unsplash.png);
 	background-size: 1400px;
+	display: flex;
 }
 
-.window div {
-	display: inline-block;
+.window__block {
 	height: 100%;
-	margin-right: -3.5px;
 }
 
 .navigation-1 {
 	width: 70px;
 	background: #000000;
 	opacity: 70%;
+	display: flex;
+	flex-direction: column;
 }
 
-.navigation-2 {
+.navigation-1__dots-os {
+	width: 52px;
+	height: 12px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.dots-os__dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.dots-os__dot_red {
+	background-color: #FF6059;
+	border-color: #B3443E;
+}
+
+.dots-os__dot_yellow {
+	background-color: #FFBD2E;
+	border-color: #B38420 ;
+}
+
+.dots-os__dot_green {
+	background-color: #29CD42;
+	border-color: #1A8029;
+}
+
+.navigation-1__quick-access {
+	flex-grow: 1;
+}
+
+.navigation-1__add-icon {
+	width: 40px;
+	height: 40px;
+	margin: 15px;
+	background: hsl(0,0%,15%);
+	border-radius: 50%;
+}
+
+.navigation-1__plus {
+	display: block;
+	margin: 13px;
+}
+
+.window__navigation-2 {
 	width: 260px;
 	background: #25272A;
 	opacity: 75%;
 }
 
-.center {
+.window__center {
 	width: 870px;
 	background: #FFFFFF;
 }
 
-.profile {
+.window__profile {
 	width: 200px;
 	background: #FFFFFF;
 	opacity: 80%;
