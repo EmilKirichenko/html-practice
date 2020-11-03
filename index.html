@@ -5,31 +5,114 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="window">
-		<div class="block window__block navigation-1 window__navigation-1">
+		<div class="window__block navigation-1 window__navigation-1">
 			<div class="dots-os navigation-1__dots-os">
 				<div class="dots-os__dot dots-os__dot_red"></div>
 				<div class="dots-os__dot dots-os__dot_yellow"></div>
 				<div class="dots-os__dot dots-os__dot_green"></div>
 			</div>
 			<div class="quick-access navigation-1__quick-access">
-				<img src="image/quick-access/1.png">
-				<img src="image/quick-access/2.png">
-				<img src="image/quick-access/3.png">
-				<img src="image/quick-access/4.png">
-				<img src="image/quick-access/5.png">
-				<img src="image/quick-access/6.png">
-				<img src="image/quick-access/7.png">
+				<div class="quick-access__app quick-access__app_active">
+					<img src="image/quick-access/1.svg">
+				</div>
+				<div class="quick-access__app">
+					<img src="image/quick-access/2.svg">
+				</div>
+				<div class="quick-access__app">
+					<img src="image/quick-access/3.svg">
+				</div>
+				<div class="quick-access__app">
+					<img src="image/quick-access/4.svg">
+				</div>
+				<div class="quick-access__app">
+					<img src="image/quick-access/5.svg">
+				</div>
+				<div class="quick-access__app">
+					<img src="image/quick-access/6.svg">
+				</div>
+				<div class="quick-access__app">
+					<img src="image/quick-access/7.svg">
+				</div>
 			</div>
-			<div class="navigation-1__add-icon">
-				<img class="navigation-1__plus" src="image/quick-access/+.png">
+			<div class="navigation-1__add-app">
+				<img class="navigation-1__plus" src="image/quick-access/+.svg">
 			</div>
 		</div>
-		<div class="block window__block window__navigation-2"></div>
-		<div class="block window__block window__center"></div>
-		<div class="block window__block window__profile"></div>
+		<div class="window__block navigation-2 window__navigation-2">
+			<div class="navigation-2__main">
+				<div class="navigation-2__header">
+					<div class="navigation-2__nomad-list">
+						<h1>Nomad List</h1>
+					</div>
+					<div class="navigation-2__select-button-container"><img class="navigation-2__select-button" src="image/navigation-2/select-button.svg"></div>
+					<img class="navigation-2__settings-icon" src="image/navigation-2/settings.svg">
+				</div>
+				
+				<div class="navigation-2__treads">
+					<img class="navigation-2__treads-icon" src="image/navigation-2/treads.svg">
+					<p class="navigation-2__treads-value">All treads</p>
+				</div>
+				<div class="channels navigation-2__channels">
+					<div class="list navigation-2__list channels__list">
+						<div class="list__header channels__header">
+							<h2 class="list__caption">CHANNELS</h2>
+							<div class="list__quantity">11</div>
+						</div>
+						<ul class="list__content">
+							<li class="navigation-2__channel navigation-2__channel_active">general</li>
+							<li class="navigation-2__channel">support</li>
+							<li class="navigation-2__channel">marketing</li>
+							<li class="navigation-2__channel">thailand</li>
+							<li class="navigation-2__channel">bali</li>
+							<li class="navigation-2__channel">poland</li>
+							<li class="navigation-2__channel">australia</li>
+							<li class="navigation-2__channel">jobs</li>
+							<li class="navigation-2__channel">startups</li>
+							<li class="navigation-2__channel">italy</li>
+							<li class="navigation-2__channel">freelance</li>
+						</ul>
+					</div>
+				</div>
+				<div class="friends navigation-2__friends">
+					<div class="list navigation-2__list friends__list">
+						<div class="list__header friends__header">
+							<h2 class="list__caption friends">FRIENDS</h2>
+							<div class="list__quantity">82</div>
+						</div>
+						<ul class="list__content">
+							<li class="friend navigation-2__friend navigation-2__friend_online">
+								<img class="friend__portrait" src="image/navigation-2/friends/1.png"><div class="friend__name">Orlando Diggs</div>
+							</li>
+							<li class="friend navigation-2__friend navigation-2__friend_online">
+								<img class="friend__portrait" src="image/navigation-2/friends/2.png"><div class="friend__name">Carmen Velasco</div>
+							</li>
+							<li class="friend navigation-2__friend">
+								<img class="friend__portrait" src="image/navigation-2/friends/3.png"><div class="friend__name">Marie Jensen</div>
+							</li>
+							<li class="friend navigation-2__friend">
+								<img class="friend__portrait" src="image/navigation-2/friends/4.png"><div class="friend__name">Alex Lee</div>
+							</li>
+							<li class="friend navigation-2__friend">
+								<img class="friend__portrait" src="image/navigation-2/friends/5.png"><div class="friend__name">Leo Gill</div>
+							</li>
+							<li class="friend navigation-2__friend">
+								<img class="friend__portrait" src="image/navigation-2/friends/6.png"><div class="friend__name">Britney Cooper</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="navigation-2__scroll">
+				<img class="navigation-2__scroll-shape" src="image/navigation-2/scroll.svg">
+			</div>
+		</div>
+		<div class="window__block center window__center"></div>
+		<div class="window__block profile window__profile"></div>
 	</div>
 </body>
 </html>
