@@ -321,7 +321,91 @@ body {
 .center__header {
 	border-bottom: 0.5px solid hsla(0,0%,0%,0.24);
 	width: 100%;
-	padding-right: 25px;
+	padding: 32px 0px 15px 25px;
+	align-items: center;
+}
+
+.center__channel-name {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: left;
+	margin-right: 6px;
+}
+
+.center__channel-name:before {
+	content: '#';
+}
+
+.center__add-to-favourite {
+	flex-grow: 1;
+}
+
+.center__people-online-icon {
+	display: inline;
+	margin: 1.5px 6px 0;
+}
+
+.center__people-online-number {
+	display: inline;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: 0px;
+	text-align: right;
+	color: #A4A4A4;
+}
+
+.center__search-form {
+	height: 32px;
+	width: 240px;
+	margin: 0 23px;
+	display: flex;
+	border: 0.5px solid rgba(0,0,0,0.24);
+	border-radius: 4px;
+	padding: 0 16px;
+}
+
+.center__search-input {
+	font-family: Lato;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: 0px;
+	text-align: left;
+	color: #8D8D8D;
+	flex-grow: 1;
+	background: rgba(0,0,0,0);
+}
+
+.center__search-icon {
+	margin-left: 8px;
+}
+
+.header__notifications {
+	position: relative;
+}
+
+.header__notifications_new:after {
+	content: '';
+	width: 4px;
+	height: 4px;
+	background: #FD4948;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	top: -1px;
+	right: -2px;
+}
+
+.header__options {
+	margin: 23px;
 }
 
 /*-----------------------------*/
@@ -331,9 +415,10 @@ body {
 	display: flex; 
 }
 
-.center__content {
+/*------------Chat-------------*/
+
+.center__chat {
 	flex-grow: 1;
-	heigth: 100%;
 }
 
 /*-----------------------------*/
@@ -344,6 +429,45 @@ body {
 	background: black;
 	opacity: 20%;
 }
+
+/*----------Chat-Input---------*/
+
+.center__chat-input {
+	width: 100%;
+	height: 72px;
+	border-top: 0.5px solid hsla(0,0%,0%,0.24);
+	display: flex;
+	align-items: center;
+	padding: 0 22px;
+}
+
+.chat-input__voice-message {
+	margin: 0 19px;	
+}
+
+.chat-input__message {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: 0px;
+	text-align: left;
+	flex-grow: 1;
+	height: 60px;
+	resize: none;
+}
+
+.chat-input__message:placeholder-shown {
+	height: 18px;
+}
+
+.chat-input__emoji {
+	margin-left: 10px;
+}
+
+/*-----------------------------*/
+
 
 /*----------------------------------------------------------------*/
 /*-----------------------------PROFILE----------------------------*/
