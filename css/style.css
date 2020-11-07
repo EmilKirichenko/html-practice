@@ -8,6 +8,8 @@ body {
 	background: url(../image/parker-amstutz-691364-unsplash.png);
 	background-size: 1400px;
 	display: flex;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400px;
 }
 
 .window__block {
@@ -32,6 +34,18 @@ body {
 	width: 6px;
 	border-radius: 3px;
 	position: absolute;
+}
+
+.portrait {
+	width: 32px;
+	height: 32px;
+	border-radius: 5px;
+}
+
+.emoji {
+	width: 16px;
+	height: 16px;
+	margin: 3px;
 }
 
 /*----------------------------------------------------------------*/
@@ -131,9 +145,7 @@ body {
 /*-----------Header------------*/
 
 .navigation-2__nomad-list {
-	font-family: 'Lato', sans-serif;
 	font-size: 20px;
-	font-style: normal;
 	font-weight: 700;
 	line-height: 24px;
 	letter-spacing: 0px;
@@ -167,10 +179,7 @@ body {
 }
 
 .navigation-2__treads-value {
-	font-family: 'Lato', sans-serif;
 	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
 	line-height: 17px;
 	letter-spacing: 0px;
 	text-align: left;
@@ -189,9 +198,7 @@ body {
 }
 
 .list__caption {
-	font-family: 'Lato', sans-serif;
 	font-size: 12px;
-	font-style: normal;
 	font-weight: 700;
 	line-height: 14px;
 	letter-spacing: 0px;
@@ -201,9 +208,7 @@ body {
 }
 
 .list__quantity {
-	font-family: 'Lato', sans-serif;
 	font-size: 12px;
-	font-style: normal;
 	font-weight: 700;
 	line-height: 14px;
 	letter-spacing: 0px;
@@ -212,10 +217,7 @@ body {
 }
 
 .list__content {
-	font-family: 'Lato', sans-serif;
 	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
 	line-height: 17px;
 	letter-spacing: 0px;
 	text-align: left;
@@ -272,9 +274,6 @@ body {
 }
 
 .friend__portrait {
-	width: 32px;
-	height: 32px;
-	border-radius: 5px;
 	margin: 0 7px;
 }
 
@@ -326,9 +325,7 @@ body {
 }
 
 .center__channel-name {
-	font-family: 'Lato', sans-serif;
 	font-size: 20px;
-	font-style: normal;
 	font-weight: 700;
 	line-height: 24px;
 	letter-spacing: 0px;
@@ -351,10 +348,7 @@ body {
 
 .center__people-online-number {
 	display: inline;
-	font-family: 'Lato', sans-serif;
 	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
 	line-height: 17px;
 	letter-spacing: 0px;
 	text-align: right;
@@ -372,10 +366,7 @@ body {
 }
 
 .center__search-input {
-	font-family: Lato;
 	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
 	line-height: 17px;
 	letter-spacing: 0px;
 	text-align: left;
@@ -419,6 +410,120 @@ body {
 
 .center__chat {
 	flex-grow: 1;
+	padding: 20px 0px 0px 23px;
+}
+
+.center__message {
+	padding-bottom: 20px;
+}
+
+.center__aside {
+	display: none;
+}
+
+.center__message_new-date {
+	padding-top: 20px;
+	border-top: 0.5px solid hsla(0,0%,0%,0.24);
+	position: relative;
+}
+
+.center__message_new-date .center__aside {
+	display: block;
+	position: absolute;
+	top: -9px;
+	width: 100%;
+	text-align: center;
+}
+
+.center__date {
+	background: white;
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 0px;
+	text-align: left;
+	color:#8D8D8D;
+}
+
+.center__portrait {
+	margin-right: 8px;
+}
+
+.center__message-content {
+	display: inline-block;
+}
+
+.center__username {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 14px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.center__time {
+	display: inline-block;
+	margin: 0 5px;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0px;
+	text-align: left;
+	color: #8D8D8D;
+}
+
+.center__message-text {
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0px;
+	text-align: left;
+	width: 777px;
+}
+
+.center__user-tag:visited {
+	color: #3577EF;
+}
+
+.center__full-picture:visited {
+	color: #3577EF;
+}
+
+.center__picture-container {
+	display: inline-block;
+	position: relative;
+	margin-top: 10px;
+}
+
+.center__picture {
+	border-radius: 3.5px;
+	width: 266px;
+}
+
+.center__likes {
+	position: absolute;
+	width: 44px;
+	height: 24px;
+	background: white;
+	border-radius: 3.5px;
+	bottom: -12px;
+	right: -22px;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
+}
+
+.likes__icon {
+	width: 15px;
+	height: 15px;
+	margin: 4px 6px;
+}
+
+.likes__number {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0px;
+	text-align: left;
+	margin-top: 2.5px;
 }
 
 /*-----------------------------*/
@@ -434,7 +539,7 @@ body {
 
 .center__chat-input {
 	width: 100%;
-	height: 72px;
+	height: 82px;
 	border-top: 0.5px solid hsla(0,0%,0%,0.24);
 	display: flex;
 	align-items: center;
@@ -445,11 +550,8 @@ body {
 	margin: 0 19px;	
 }
 
-.chat-input__message {
-	font-family: 'Lato', sans-serif;
+.chat-input__textarea {
 	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
 	line-height: 17px;
 	letter-spacing: 0px;
 	text-align: left;
@@ -458,11 +560,11 @@ body {
 	resize: none;
 }
 
-.chat-input__message:placeholder-shown {
+.chat-input__textarea:placeholder-shown {
 	height: 18px;
 }
 
-.chat-input__emoji {
+.chat-input__add-emoji {
 	margin-left: 10px;
 }
 
