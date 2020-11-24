@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="icon" href="image/favicon.ico">
 </head>
 <body>
 	<div class="window">
@@ -39,18 +40,23 @@
 					<img src="image/quick-access/7.svg">
 				</div>
 			</div>
-			<div class="navigation-1__add-app">
+			<button class="navigation-1__add-app" type="button">
 				<img class="navigation-1__plus" src="image/quick-access/+.svg">
-			</div>
+			</button>
 		</div>
+
 		<div class="window__block navigation-2">
-			<div class="navigation-2__main">
+			<div class="navigation-2__content">
 				<div class="header navigation-2__header">
 					<div class="navigation-2__nomad-list">
 						<h1>Nomad List</h1>
 					</div>
-					<div class="navigation-2__select-button-container"><img class="navigation-2__select-button" src="image/navigation-2/select-button.svg"></div>
-					<img class="navigation-2__settings-icon" src="image/navigation-2/settings.svg">
+					<div class="navigation-2__select-button-container">
+						<button class="navigation-2__select-button" type="button">
+							<img src="image/navigation-2/select-button.svg">
+						</button>
+					</div>
+					<button class="navigation-2__settings-icon" type="button"><img src="image/navigation-2/settings.svg"></button>
 				</div>
 				
 				<div class="navigation-2__treads">
@@ -64,17 +70,17 @@
 							<div class="list__quantity">11</div>
 						</div>
 						<ul class="list__content">
-							<li class="navigation-2__channel navigation-2__channel_active">general</li>
-							<li class="navigation-2__channel">support</li>
-							<li class="navigation-2__channel">marketing</li>
-							<li class="navigation-2__channel">thailand</li>
-							<li class="navigation-2__channel">bali</li>
-							<li class="navigation-2__channel">poland</li>
-							<li class="navigation-2__channel">australia</li>
-							<li class="navigation-2__channel">jobs</li>
-							<li class="navigation-2__channel">startups</li>
-							<li class="navigation-2__channel">italy</li>
-							<li class="navigation-2__channel">freelance</li>
+							<li><a href="#" class="navigation-2__channel navigation-2__channel_active">general</a></li>
+							<li><a href="#" class="navigation-2__channel">support</a></li>
+							<li><a href="#" class="navigation-2__channel">marketing</a></li>
+							<li><a href="#" class="navigation-2__channel">thailand</a></li>
+							<li><a href="#" class="navigation-2__channel">bali</a></li>
+							<li><a href="#" class="navigation-2__channel">poland</a></li>
+							<li><a href="#" class="navigation-2__channel">australia</a></li>
+							<li><a href="#" class="navigation-2__channel">jobs</a></li>
+							<li><a href="#" class="navigation-2__channel">startups</a></li>
+							<li><a href="#" class="navigation-2__channel">italy</a></li>
+							<li><a href="#" class="navigation-2__channel">freelance</a></li>
 						</ul>
 					</div>
 				</div>
@@ -107,32 +113,32 @@
 					</div>
 				</div>
 			</div>
-			<div class="scroll">
-				<div class="scroll-shape navigation-2__scroll-shape"></div>
-			</div>
 		</div>
 		<div class="window__block center">
 			<div class="header center__header">
 				<h2 class="center__channel-name">general</h2>
-				<div class="center__add-to-favourite"><img src="image/center/favourite.svg"></div>
+
+				<div class="center__add-to-favourite">
+					<button class="center__add-to-favourite-btn" type="button">
+						<img src="image/center/favourite.svg">
+					</button>
+				</div>
 
 				<div class="center__people-online">
 					<img class="center__people-online-icon" src="image/center/people-online.svg"><div class="center__people-online-number">1,093</div>
 				</div>
 
-				<form class="center__search-form">
+				<form class="center__search-form" name="search">
 					<input class="center__search-input" placeholder="Search..." type="text" name="search">
-					<img class="center__search-icon" src="image/center/search.svg">
+					<button class="center__search-icon" type="submit"><img src="image/center/search.svg"></button>
 				</form>
 
-				<div class="header__notifications header__notifications_new"><img src="image/center/notifications.svg"></div>
+				<button class="header__notifications header__notifications_new" type="button"><img src="image/center/notifications.svg"></button>
 
-				<img class="header__options" src="image/center/options.svg">
+				<button class="header__options" type="button"><img src="image/center/options.svg"></button>
 			</div>
 
-			<div class="center__main">
-				<div class="center__chat">
-
+			<div class="center__chat">
 					<div class="center__message">
 						<aside class="center__aside"><div class="center__date">Sunday, October 21st</div></aside>
 						<img class="portrait center__portrait" src="image/center/user-portraits/1.jpg">
@@ -191,18 +197,13 @@
 							<p class="center__message-text"><a class="center__username" href="#">@aa_da</a> What's the reason for the van? Saving money or just like to get outside? If you've got a stable source of income you could always do some short term Airbnbs + buy a truck/topper, build a platform in the back. That way you can always convert it back to a truck and sleep in an apartment if you want.</p>
 						</div>
 					</div>
-
-				</div>
-
-				<div class="scroll center__scroll"><div class="scroll-shape center__scroll-shape"></div></div>
-
 			</div>
 
 			<form class="chat-input center__chat-input" method="post">
-				<img class="chat-input__attach-file" src="image/center/attach.svg">
-				<img class="chat-input__voice-message" src="image/center/voice.svg">
+				<button class="chat-input__attach-file" type="button"><img src="image/center/attach.svg"></button>
+				<button class="chat-input__voice-message" type="button"><img src="image/center/voice.svg"></button>
 				<textarea class="chat-input__textarea" placeholder="Message in #general"></textarea>
-				<img class="chat-input__add-emoji" src="image/center/add-emoji.svg">
+				<button class="chat-input__add-emoji" type="button"><img src="image/center/add-emoji.svg"></button>
 			</form>
 
 		</div>
@@ -211,10 +212,10 @@
 			<div class="profile__info">
 				<div class="profile__real-name profile__real-name_online">Amilia Luna</div>
 				<div class="profile__status">UI Designer</div>
-				<div class="profile__social-media"><img src="image/profile/facebook.svg"></div>
-				<div class="profile__social-media"><img src="image/profile/twiter.svg"></div>
-				<div class="profile__social-media"><img src="image/profile/instagram.svg"></div>
-				<div class="profile__social-media"><img src="image/profile/in.svg"></div>
+				<a href="#" class="profile__social-media"><img src="image/profile/facebook.svg"></a>
+				<a href="#" class="profile__social-media"><img src="image/profile/twiter.svg"></a>
+				<a href="#" class="profile__social-media"><img src="image/profile/instagram.svg"></a>
+				<a href="#" class="profile__social-media"><img src="image/profile/in.svg"></a>
 				<div class="profile__buttons">
 					<button class="profile__message-btn" type="button">Message</button>
 					<button class="profile__other-options" type="button"><img src="image/profile/triangle.svg"></button>
@@ -235,7 +236,7 @@
 					<h2 class="extra-info__caption">Timezone</h2>
 					<span class="extra-info__value">2:21 PM Local time</span>
 				</div>
-				<button class="profile__close" type="button"><img src="image/profile/close.svg"></button>
+				<button class="profile__close" type="button"><img class="profile__close-icon" src="image/profile/close.svg"></button>
 			</div>
 		</div>
 	</div>
