@@ -3,6 +3,7 @@
 <head>
 	<title>Chat macOS</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
@@ -66,10 +67,10 @@
 				<div class="channels navigation-2__channels">
 					<div class="list navigation-2__list channels__list">
 						<div class="list__header channels__header">
-							<h2 class="list__caption">CHANNELS</h2>
+							<h2 class="list__caption channels__caption">CHANNELS</h2>
 							<div class="list__quantity">11</div>
 						</div>
-						<ul class="list__content">
+						<ul class="list__content channels__content">
 							<li><a href="#" class="navigation-2__channel navigation-2__channel_active">general</a></li>
 							<li><a href="#" class="navigation-2__channel">support</a></li>
 							<li><a href="#" class="navigation-2__channel">marketing</a></li>
@@ -87,10 +88,10 @@
 				<div class="friends navigation-2__friends">
 					<div class="list navigation-2__list friends__list">
 						<div class="list__header friends__header">
-							<h2 class="list__caption friends">FRIENDS</h2>
+							<h2 class="list__caption friends__caption">FRIENDS</h2>
 							<div class="list__quantity">82</div>
 						</div>
-						<ul class="list__content">
+						<ul class="list__content friends__content">
 							<li class="friend navigation-2__friend navigation-2__friend_online">
 								<img class="portrait friend__portrait" src="image/navigation-2/friends/1.png"><div class="friend__name">Orlando Diggs</div>
 							</li>
@@ -116,16 +117,16 @@
 		</div>
 		<div class="window__block center">
 			<div class="header center__header">
-				<h2 class="center__channel-name">general</h2>
-
-				<div class="center__add-to-favourite">
-					<button class="center__add-to-favourite-btn" type="button">
-						<img src="image/center/favourite.svg">
-					</button>
-				</div>
-
-				<div class="center__people-online">
-					<img class="center__people-online-icon" src="image/center/people-online.svg"><div class="center__people-online-number">1,093</div>
+				<div class="center__channel">
+					<h2 class="center__channel-name">general</h2>
+					<div class="center__add-to-favourite">
+						<button class="center__add-to-favourite-btn" type="button">
+							<img src="image/center/favourite.svg">
+						</button>
+					</div>
+					<div class="center__people-online">
+						<img class="center__people-online-icon" src="image/center/people-online.svg"><div class="center__people-online-number">1,093</div>
+					</div>
 				</div>
 
 				<form class="center__search-form" name="search">
@@ -158,7 +159,7 @@
 							<h2 class="center__real-name">Harold Adams</h2>
 							<div class="center__time">5:02 PM</div>
 							<p class="center__message-text">Which country to visit next? This is a photo with my friends - celebrating in Bali<img class="emoji" src="image/center/chat/emoji1.png"><br>
-							<a class="center__full-picture" href="#">my-top-places.jpg</a></p>
+							<a class="center__full-size-picture" href="#">my-top-places.jpg</a></p>
 							<div class="center__picture-container">
 								<img class="center__picture" src="image/center/chat/photo.jpg">
 								<aside class="likes center__likes">
@@ -240,6 +241,8 @@
 			</div>
 		</div>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
 </body>
 </html>
 
